@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/btDeviceLV" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/Roomba_Object_Tracker_Camera_View"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/direction_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/AudioFileInfoOverlayText"
+        android:text="hi"
+        android:layout_centerInParent="true"/>
+
+    <!--<ToggleButton
+        android:id="@+id/toggleSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toggle Thingy"
+        android:layout_centerVertical="true"
+        android:checked="false" />-->
+</RelativeLayout>
